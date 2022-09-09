@@ -1,7 +1,9 @@
 #include<stdio.h>
 
 /**
- * main function - starts running our program
+ * main - starts running our program
+ *
+ * Return: Returns a string
 */
 int main(void)
 {
