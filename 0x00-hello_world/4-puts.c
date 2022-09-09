@@ -1,6 +1,8 @@
 #include<stdio.h>
 
-/*The main program starts*/
+/**
+ * main function -starts running our program
+*/
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");

@@ -1,6 +1,8 @@
 #include<stdio.h>
 
-/*The main program starts here*/
+/**
+ * main function - starts running our program
+*/
 int main(void)
 {
 	printf("with proper grammar, but the outcome is a piece of art,");
