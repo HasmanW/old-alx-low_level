@@ -16,10 +16,9 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	k = (n % 10);
-	while (n == 1,2,3,4,5,6,7,8,9 && k < 6)
+	if (n <= 9 && 1 >= n && n < 6)
 	{
 		printf("Last digit of %d is %d and %d is less than 6 and not 0\n", n, k, k);
-		return 0;
 	}
 
 	if (k > 5)
@@ -29,6 +28,6 @@ int main(void)
 	else if (k == 0 || n == 0)
 	{
 		printf("The last digit of %d is 0 and is 0\n", n);
-	} 
+	}
 	return (0);
 }
