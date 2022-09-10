@@ -13,4 +13,5 @@ int main(void)
 	{
 		printf("%x", i);
 	}
+	return (0);
 }
