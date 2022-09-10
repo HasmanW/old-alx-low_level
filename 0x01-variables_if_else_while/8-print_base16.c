@@ -11,7 +11,8 @@ int main(void)
 
 	for (i = 0; i <= 15; i++)
 	{
-		printf("%x\n", i);
+		printf("%x", i);
 	}
+	printf("\n");
 	return (0);
 }
