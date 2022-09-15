@@ -1,23 +1,21 @@
 #include "main.h"
+
 /**
- * main - Starts the program
+ * print_alphabet - print alphabet in lowercase
  *
- * Return: Returns true 
-*/
-
-int main(void)
-{
-	print_alphabet();
-	return 0;
-}
-
+ * Prototype: void print_alphabet(void);
+ *
+ * Return: nothing
+ */
 void print_alphabet(void)
-
 {
-	for (int i = 97; i <=122; i++)
+	char alphabet = 'a';
+
+	while (alphabet <= 'b')
 	{
-		_putchar(i);
+		_putchar(alphabet);
+		alphabet++;
 	}
+
 	_putchar('\n');
 }
-
