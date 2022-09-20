@@ -1,7 +1,7 @@
 #include "main.h"
 #include <string.h>
 
-void print _rev(char *s)
+void print_rev(char *s)
 {
 	int i, len, temp;
 	len = strlen(s);
