@@ -8,5 +8,5 @@
  */
 char *_strcat(char *dest, char *src)  //we are writing a function
 {
-	strcat(dest,src);
+	strcat(dest, src);
 }
