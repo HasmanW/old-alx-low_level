@@ -8,5 +8,9 @@
  */
 char *_strcat(char *dest, char *src)  //we are writing a function
 {
-	_putchar(dest, src);
+	int i;
+	for(i = 0; i != '\0'; i++)
+	{
+		_putchar(dest, src);
+	}
 }
