@@ -9,5 +9,7 @@ char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 char *_memcpy(char *dest, char *src, unsigned int n);
 void print_chessboard(char (*a)[8]);
+void set_string(char **s, char *to);
+void print_diagsums(int *a, int size);
 
 #endif
