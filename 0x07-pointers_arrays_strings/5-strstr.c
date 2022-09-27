@@ -10,5 +10,6 @@
 char *_strstr(char *haystack, char *needle)
 {
 	char *p = strstr(haystack, needle);
+
 	return (p);
 }
