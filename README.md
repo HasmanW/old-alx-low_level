@@ -1,1 +1,1 @@
-This is my READ ME.
+This is my readme
