@@ -1,17 +1,26 @@
 #include<stdio.h>
-#include<string.h>
 
 /**
- * main - Starts the program
+ * main - single digit numbers seperated with a comma
  *
- * Return - Returns main output
-*/
+ * Return: returns true
+ */
 int main(void)
 {
-	for (int i = 0; i < 10; i++)
-	{
-		printf("%d", i);
-	}
-	return (0);
+    /*variable declaration*/
+    int n;
 
+    /*code to print numbers*/
+    for (n = 48; n <= 57; n++)
+    {
+        putchar(n);
+
+        if (n != 57)
+        {
+            putchar(',');
+            putchar(' ');
+        }
+    }
+    putchar('\n');
 }
+
