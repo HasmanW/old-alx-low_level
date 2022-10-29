@@ -9,18 +9,19 @@
 listint_t *add_nodeint(listint_t **head, const int n)
 {
         /*declare variables*/
-        listint_t *newNodePtr;
+        listint_t *new;
 
         /*create space in memory and checking if space has been allocated*/
         newNodePtr = malloc(sizeof(listint_t));
-        if (newNodePtr == NULL)
+        if (new == NULL)
                 return (NULL):
 
         /*assign values to new node*/
-        newNodePtr->n = n;
-        newNodePtr->next = *head;
-        *head = newNodePtr;
+        new->n = n;
+        new->next = *head;
 
-        return (newNodePtr);
+        *head = new;
+
+        return (new);
 }
 
