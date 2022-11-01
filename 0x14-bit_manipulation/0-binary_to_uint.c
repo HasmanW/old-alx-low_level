@@ -1,15 +1,12 @@
 #include "main.h"
-
 /**
- * binary_to_uint - converts binary number to unsigned int
- * @b: string of 0s and 1s
- * Return: returns the converted unsigned int or 0 if
- *         there is one or more char in string b that is not 0 or 1
- *         b is NULL
+ * binary_to_uint - converts a binary to an unsigned int
+ * @b: the binary number as a string
+ *
+ * Return: the converted value
  */
 unsigned int binary_to_uint(const char *b)
 {
-	/*declaration and initialization of variables*/
 unsigned int decimal = 0;
 int str_len = 0, base = 1;
 
@@ -29,9 +26,10 @@ return (decimal);
 }
 
 /**
- * check_string - checks if string provided is valid
- * @b: strings of 0s and 1s
- * Return: returns true or false
+ * check_valid_string - checks if a string has only 0's and 1's
+ * @b: string to be checked
+ *
+ * Return: 1 if string is valid, 0 otherwise
  */
 int check_valid_string(const char *b)
 {
