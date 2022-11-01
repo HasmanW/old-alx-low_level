@@ -10,25 +10,22 @@
 unsigned int binary_to_uint(const char *b)
 {
 	/*declaration and initialization of variables*/
-	unsigned int decimal_num = 0;
-	int base = 1, str_length = 0;
+	unsigned int decimal = 0;
+        int str_len = 0, base = 1;
 
-	/*check if string is valid*/
-	if (!check_string(b))
-		return (0);
+        if (!check_valid_string(b))
+                return (0);
 
-	/*length string*/
-	while (b[str_length] != '\0')
-		str_length++;
+        while (b[str_len] != '\0')
+                str_len++;
 
-	/*convertion to decimal*/
-	while (str_length)
+        while (str_len)
         {
-                decimal_num += ((b[str_len - 1] - '0') * base);
+                decimal += ((b[str_len - 1] - '0') * base);
                 base *= 2;
-                str_length--;
+                str_len--;
         }
-        return (decimal_num);
+        return (decimal);
 }
 
 /**
