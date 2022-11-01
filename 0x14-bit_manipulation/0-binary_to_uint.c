@@ -33,18 +33,16 @@ unsigned int binary_to_uint(const char *b)
  * @b: strings of 0s and 1s
  * Return: returns true or false
  */
-int check_string(const char *b)
+int check_valid_string(const char *b)
 {
-	/*checks if string if null*/
-	if (b == NULL)
-		return (0);
+        if (b == NULL)
+                return (0);
 
-	/*checks if string contains anything else apart from 1s and 0s*/
-	while (*b)
-	{
-		if (*b != '0' && *b != '1')
-			return (0);
-			b++;
-	}
-	return (1);
+        while (*b)
+        {
+                if (*b != '1' && *b != '0')
+                        return (0);
+                        b++;
+        }
+        return (1);
 }
