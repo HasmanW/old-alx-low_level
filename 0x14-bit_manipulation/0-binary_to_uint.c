@@ -23,12 +23,12 @@ unsigned int binary_to_uint(const char *b)
 
 	/*convertion to decimal*/
 	while (str_length)
-	{
-		decimal_num += ((b[str_length - 1] - '0') * base);
-		base *= 2;
-		str_length--;
-	}
-	return (decimal_num);
+        {
+                decimal_num += ((b[str_len - 1] - '0') * base);
+                base *= 2;
+                str_length--;
+        }
+        return (decimal_num);
 }
 
 /**
