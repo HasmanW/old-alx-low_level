@@ -11,7 +11,7 @@ unsigned int binary_to_uint(const char *b)
 {
 	/*declaration and initialization of variables*/
 	unsigned int decimal_num = 0;
-	int  base = 1, str_length = 0;
+	int base = 1, str_length = 0;
 
 	/*check if string is valid*/
 	if (!check_string(b))
@@ -19,9 +19,7 @@ unsigned int binary_to_uint(const char *b)
 
 	/*length string*/
 	while (b[str_length] != '\0')
-	{
 		str_length++;
-	}
 
 	/*convertion to decimal*/
 	while (str_length)
@@ -42,9 +40,7 @@ int check_string(const char *b)
 {
 	/*checks if string if null*/
 	if (b == NULL)
-	{
 		return (0);
-	}
 
 	/*checks if string contains anything else apart from 1s and 0s*/
 	while (*b)
