@@ -11,11 +11,11 @@ size_t print_dlistint(const_t *h){
 	const dlistint_t *temp;
 
 	temp = h;
-	while temp{
+	while (temp){
 		print("%d\n", temp->n);
 		temp = temp->next;
 		count += 1;
 	}
-	return count;
+	return (count);
 }
 
